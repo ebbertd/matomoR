@@ -13,3 +13,5 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     httr
+URL: https://github.com/ebbertd/matomoR
+BugReports: https://github.com/ebbertd/matomoR/issues
