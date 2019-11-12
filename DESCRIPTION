@@ -12,6 +12,8 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    httr
+    httr,
+    jsonlite
 URL: https://github.com/ebbertd/matomoR
 BugReports: https://github.com/ebbertd/matomoR/issues
+RoxygenNote: 6.1.1
