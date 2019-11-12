@@ -1,5 +1,5 @@
 Package: matomoR
-Title: What the Package Does (One Line, Title Case)
+Title: 'Matomo' Analytics Web API Package
 Version: 0.0.1
 Authors@R: 
     person(given = "Daniel",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("cre", "aut"),
            email = "daniel.ebbert@uni-muenster.de",
            comment = c(ORCID = "0000-0003-3666-7205"))
-Description: What the package does (one paragraph).
+Description: Query the Analyics API of a 'Matomo' server. For more information about 'Matomo' and the api see: <https://matomo.org/docs/analytics-api/>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
