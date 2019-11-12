@@ -17,3 +17,5 @@ Imports:
 URL: https://github.com/ebbertd/matomoR
 BugReports: https://github.com/ebbertd/matomoR/issues
 RoxygenNote: 6.1.1
+Suggests: 
+    testthat (>= 2.1.0)

@@ -11,7 +11,7 @@
 matomo_hostname <- function() {
   matomo_hostname <- Sys.getenv("MATOMO_HOST")
   matomo_hostname <- paste0(matomo_hostname, "/index.php")
-  if (identical(matomo_hostname, "")) {
+  if (identical(matomo_hostname, "/index.php")) {
     stop("Please set env var MATOMO_HOST to your Matomo host.",
       call. = FALSE
     )
