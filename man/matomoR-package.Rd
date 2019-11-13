@@ -17,7 +17,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Daniel Ebbert \email{daniel.ebbert@uni-muenster.de} (0000-0003-3666-7205)
+\strong{Maintainer}: Daniel Ebbert \email{daniel.ebbert@uni-muenster.de} (\href{https://orcid.org/0000-0003-3666-7205}{ORCID})
 
 }
 \keyword{internal}

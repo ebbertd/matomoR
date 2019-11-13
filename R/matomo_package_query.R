@@ -31,7 +31,7 @@ matomo_package_query <-
         url,
         query = list(query,
                      format = "JSON",
-                     token = matomo_token()),
+                     token_auth = matomo_token()),
         matomo_package_useragent()
       )
 
