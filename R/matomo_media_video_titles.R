@@ -5,13 +5,7 @@
 #' This function expects the hostname and token to be set as environment variables.
 #'
 #' @return A list containing a data frame with the requested analytics values.
-#' @param idSite The id of your website.
-#' @param period The period you request the statistics for. Can be any of: day, week, month, year or range.
-#' @param date The date you request the statictics for. Standard format = YYYY-MM-DD or today or yesterday.
-#' @param segment Defines the Custom Segment you wish to filter your reports to.
-#' @param idSubtable The id of a possible subtable.
-#' @param secondaryDimension Secondary dimension is the dimension used in the sub-table of the Event report you are requesting.
-#' @param ... Possible further options to the query in the format variable = value. For a list of possible options see: \url{https://developer.matomo.org/api-reference/reporting-api}
+#' @inheritParams matomo_media_video_resources
 #' @importFrom httr modify_url
 #' @export
 #' @examples
