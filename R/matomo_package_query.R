@@ -22,9 +22,9 @@
 #' # Make the query
 #' matomo_package_query(query = query)
 matomo_package_query <-
-  function(query = NULL, url = NULL) {
+  function(query = NULL, url = matomo_hostname()) {
 
-    url <- httr::modify_url(matomo_hostname(), query = query)
+    url <- httr::modify_url(url, query = query)
 
     # Save api call to variable
     resp <-

@@ -4,7 +4,7 @@
 \alias{matomo_package_query}
 \title{matomoR query function}
 \usage{
-matomo_package_query(query = NULL, url = NULL)
+matomo_package_query(query = NULL, url = matomo_hostname())
 }
 \arguments{
 \item{query}{A list of query parameters.}
