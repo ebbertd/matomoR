@@ -4,18 +4,19 @@
 \alias{matomo_package_query}
 \title{matomoR query function}
 \usage{
-matomo_package_query(url = NULL, query = NULL)
+matomo_package_query(query = NULL, url = NULL)
 }
 \arguments{
-\item{url}{The URL for the api call.}
-
 \item{query}{A list of query parameters.}
+
+\item{url}{The URL for the api call, by default the environment variable \code{MATOMO_HOST}.}
 }
 \value{
 The response of the api call.
 }
 \description{
 This is an internal function of the matomoR package to query the api.
+You can use it to call any endpoint that does not have a higher-level interface.
 }
 \examples{
 Sys.setenv(MATOMO_HOST = "https://demo.matomo.org")
@@ -27,9 +28,6 @@ query <- list(
  method = "API.getMatomoVersion"
 )
 
-# Create the url
-url <- httr::modify_url(matomo_hostname(), query = query)
-
 # Make the query
-matomo_package_query(url)
+matomo_package_query(query = query)
 }

@@ -19,11 +19,8 @@ matomo_version <- function() {
     method = "API.getMatomoVersion"
   )
 
-  # Construct the url for the api call
-  url <- modify_url(matomo_hostname(), query = query)
-
   # Query the api and return the response
-  matomo_package_query(url)
+  matomo_package_query(query = query)
 }
 
 #' Print result of matomo_version()
