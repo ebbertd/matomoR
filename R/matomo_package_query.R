@@ -1,9 +1,10 @@
 #' matomoR query function
 #'
 #' This is an internal function of the matomoR package to query the api.
+#' You can use it to call any endpoint that does not have a higher-level interface.
 #'
 #' @return The response of the api call.
-#' @param url The URL for the api call.
+#' @param url The URL for the api call, by default the environment variable `MATOMO_HOST`.
 #' @param query A list of query parameters.
 #' @import httr
 #' @importFrom jsonlite fromJSON
@@ -18,13 +19,13 @@
 #'  method = "API.getMatomoVersion"
 #' )
 #'
-#' # Create the url
-#' url <- httr::modify_url(matomo_hostname(), query = query)
-#'
 #' # Make the query
-#' matomo_package_query(url)
+#' matomo_package_query(query = query)
 matomo_package_query <-
-  function(url = NULL, query = NULL) {
+  function(query = NULL, url = matomo_hostname()) {
+
+    url <- httr::modify_url(url, query = query)
+
     # Save api call to variable
     resp <-
       GET(
